@@ -36,17 +36,17 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install DESTDIR=$RPM_BUILD_ROOT
 
-install samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
-
-gzip -9nf README
+install samples/*.{gif,txt,dat,pl} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc *.gz
+%doc README
 %{perl_sitelib}/GIFgraph.pm
 %{perl_sitelib}/GIFgraph
 %{_mandir}/man3/*
 %{_examplesdir}/%{name}-%{version}
+%attr(755) %{_examplesdir}/%{name}-%{version}/*.pl
+%{_examplesdir}/%{name}-%{version}/*.[gtd]*
