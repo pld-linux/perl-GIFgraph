@@ -3,7 +3,7 @@ Summary:	GIFgraph perl module
 Summary(pl):	Modu³ perla GIFgraph
 Name:		perl-GIFgraph
 Version:	1.20
-Release:	4
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
@@ -15,6 +15,7 @@ BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-Graph
 BuildRequires:	ImageMagick-perl
+BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
