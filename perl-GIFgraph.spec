@@ -11,7 +11,7 @@ Source0:	http://www.cpan.org/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.
 # Source0-md5:	b4171f7d88c01acb0df5c5d515b24714
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	ImageMagick-perl
-BuildRequires:	perl-devel >= 5.6.1
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-Graph
 BuildRequires:	ImageMagick-perl
