@@ -3,7 +3,7 @@ Summary:	GIFgraph - graph plotting module
 Summary(pl):	GIFgraph - modu³ do rysowania wykresów
 Name:		perl-GIFgraph
 Version:	1.20
-Release:	8
+Release:	9
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
