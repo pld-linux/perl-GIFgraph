@@ -43,7 +43,7 @@ install samples/* $RPM_BUILD_ROOT%{_prefix}/src/examples/%{name}-%{version}
 )
 
 gzip -9nf $RPM_BUILD_ROOT%{_mandir}/man3/* \
-        CHANGES README BUGS
+	README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
