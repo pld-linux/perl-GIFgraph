@@ -14,6 +14,7 @@ BuildRequires:	ImageMagick-perl
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-Graph
+BuildRequires:	ImageMagick-perl
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
