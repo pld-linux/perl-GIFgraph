@@ -6,7 +6,7 @@ Version:	1.20
 Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
-Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
+Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-17
 BuildRequires:	ImageMagick-perl
 BuildRequires:	perl >= 5.6.1
