@@ -27,7 +27,7 @@ formacie GIF.
 %setup -q -n GIFgraph-%{version}
 
 %build
-perl Makefile.PL
+%{__perl} Makefile.PL
 %{__make}
 
 %install
