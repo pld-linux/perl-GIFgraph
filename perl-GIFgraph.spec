@@ -10,6 +10,7 @@ Group(de):	Entwicklung/Sprachen/Perl
 Group(pl):	Programowanie/Jêzyki/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 3.0.3-17
+BuildRequires:	ImageMagick-perl
 BuildRequires:	perl >= 5.6
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-Graph
