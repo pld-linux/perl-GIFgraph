@@ -7,7 +7,7 @@ Release:	7
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-17
+BuildRequires:	rpm-perlprov >= 4.0.2-104
 BuildRequires:	ImageMagick-perl
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-GD
