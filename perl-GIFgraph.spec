@@ -3,11 +3,11 @@ Summary:	GIFgraph perl module
 Summary(pl):	Modu³ perla GIFgraph
 Name:		perl-GIFgraph
 Version:	1.20
-Release:	7
+Release:	8
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
-BuildRequires:	rpm-perlprov >= 3.0.3-17
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	ImageMagick-perl
 BuildRequires:	perl >= 5.6.1
 BuildRequires:	perl-GD
@@ -27,7 +27,8 @@ formacie GIF.
 %setup -q -n GIFgraph-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 
 %install
@@ -44,8 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc README
-%{perl_sitelib}/GIFgraph.pm
-%{perl_sitelib}/GIFgraph
+%{perl_vendorlib}/GIFgraph.pm
+%{perl_vendorlib}/GIFgraph
 %{_mandir}/man3/*
 %dir %{_examplesdir}/%{name}-%{version}
 %attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
