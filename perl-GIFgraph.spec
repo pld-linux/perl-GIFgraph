@@ -47,6 +47,6 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/GIFgraph.pm
 %{perl_sitelib}/GIFgraph
 %{_mandir}/man3/*
-%{_examplesdir}/%{name}-%{version}
-%attr(755) %{_examplesdir}/%{name}-%{version}/*.pl
+%dir %{_examplesdir}/%{name}-%{version}
+%attr(755,root,root) %{_examplesdir}/%{name}-%{version}/*.pl
 %{_examplesdir}/%{name}-%{version}/*.[gtd]*
