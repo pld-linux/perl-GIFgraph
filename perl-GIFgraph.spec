@@ -4,7 +4,8 @@ Summary(pl):	Modu³ perla GIFgraph
 Name:		perl-GIFgraph
 Version:	1.20
 Release:	8
-License:	GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
 # Source0-md5:	b4171f7d88c01acb0df5c5d515b24714
