@@ -9,7 +9,7 @@ Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildRequires:	ImageMagick-perl
-BuildRequires:	perl >= 5.6.1
+BuildRequires:	perl-devel >= 5.6.1
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-Graph
 BuildRequires:	ImageMagick-perl
