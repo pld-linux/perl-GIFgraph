@@ -38,7 +38,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 install samples/* $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
-gzip -9nf CHANGES README BUGS
+gzip -9nf README
 
 %clean
 rm -rf $RPM_BUILD_ROOT
