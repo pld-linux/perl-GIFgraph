@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	GIFgraph - graph plotting module
-Summary(pl):	GIFgraph - modu≥ do rysowania wykresÛw
+Summary(pl.UTF-8):   GIFgraph - modu≈Ç do rysowania wykres√≥w
 Name:		perl-GIFgraph
 Version:	1.20
 Release:	9
@@ -21,8 +21,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 GIFgraph is a module to create and display GIF output for a graph.
 
-%description -l pl
-GIFgraph jest modu≥em do tworzenia i wy∂wietlania wykresÛw i grafÛw w
+%description -l pl.UTF-8
+GIFgraph jest modu≈Çem do tworzenia i wy≈õwietlania wykres√≥w i graf√≥w w
 formacie GIF.
 
 %prep
