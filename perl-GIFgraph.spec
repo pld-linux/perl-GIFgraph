@@ -1,6 +1,6 @@
 %include	/usr/lib/rpm/macros.perl
 Summary:	GIFgraph - graph plotting module
-Summary(pl.UTF-8):   GIFgraph - moduł do rysowania wykresów
+Summary(pl.UTF-8):	GIFgraph - moduł do rysowania wykresów
 Name:		perl-GIFgraph
 Version:	1.20
 Release:	9
