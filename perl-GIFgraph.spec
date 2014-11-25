@@ -1,3 +1,4 @@
+%define		pdir	GIFgraph
 %include	/usr/lib/rpm/macros.perl
 Summary:	GIFgraph - graph plotting module
 Summary(pl.UTF-8):	GIFgraph - moduł do rysowania wykresów
@@ -9,12 +10,13 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/GIFgraph/GIFgraph-%{version}.tar.gz
 # Source0-md5:	b4171f7d88c01acb0df5c5d515b24714
-BuildRequires:	rpm-perlprov >= 4.1-13
+URL:		http://search.cpan.org/dist/GIFgraph-/
 BuildRequires:	ImageMagick-perl
-BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	ImageMagick-perl
 BuildRequires:	perl-GD
 BuildRequires:	perl-GD-Graph
-BuildRequires:	ImageMagick-perl
+BuildRequires:	perl-devel >= 1:5.8.0
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -39,7 +41,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
-install samples/*.{gif,txt,dat,pl} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p samples/*.{gif,txt,dat,pl} $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
