@@ -1,5 +1,4 @@
 %define		pdir	GIFgraph
-%include	/usr/lib/rpm/macros.perl
 Summary:	GIFgraph - graph plotting module
 Summary(pl.UTF-8):	GIFgraph - moduł do rysowania wykresów
 Name:		perl-GIFgraph
